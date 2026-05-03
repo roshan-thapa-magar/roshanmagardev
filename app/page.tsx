@@ -58,10 +58,10 @@ export default function Page() {
           variants={stagger}
           initial="hidden"
           animate="show"
-          className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 max-w-6xl mx-auto w-full  md:py-0"
+          className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 max-w-6xl mx-auto w-full md:py-0"
         >
-          {/* LEFT */}
-          <div className="space-y-6 md:space-y-8">
+          {/* LEFT - text centered on mobile, left-aligned on md+ */}
+          <div className="space-y-6 md:space-y-8 text-center md:text-left">
             <motion.div variants={fadeUp} className="space-y-4 md:space-y-6">
               <div className="inline-block">
                 <span className="text-sm uppercase tracking-wider text-primary/70 font-mono">
@@ -73,14 +73,14 @@ export default function Page() {
                 <span className="text-primary/80">Thapa Magar</span>
               </h1>
 
-              <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-md">
+              <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-md mx-auto md:mx-0">
                 I design and build scalable, high-performance web applications with
                 real-world impact. Crafting digital experiences that matter.
               </p>
             </motion.div>
 
-            {/* BUTTONS */}
-            <motion.div variants={fadeUp} className="flex flex-wrap gap-3 md:gap-4">
+            {/* BUTTONS - centered on mobile, left on md+ */}
+            <motion.div variants={fadeUp} className="flex flex-wrap gap-3 md:gap-4 justify-center md:justify-start">
               <Button
                 asChild
                 size="lg"
@@ -96,8 +96,8 @@ export default function Page() {
               </Button>
             </motion.div>
 
-            {/* SOCIAL LINKS */}
-            <motion.div variants={fadeUp} className="flex gap-2 md:gap-3 text-muted-foreground">
+            {/* SOCIAL LINKS - centered on mobile, left on md+ */}
+            <motion.div variants={fadeUp} className="flex gap-2 md:gap-3 text-muted-foreground justify-center md:justify-start">
               <motion.a
                 href="https://www.facebook.com/roshan.thapa.magar.193061"
                 target="_blank"
@@ -154,8 +154,8 @@ export default function Page() {
               </motion.a>
             </motion.div>
 
-            {/* STATS */}
-            <motion.div variants={fadeUp} className="flex gap-6 md:gap-8 pt-2 md:pt-4">
+            {/* STATS - centered on mobile, left on md+ */}
+            <motion.div variants={fadeUp} className="flex gap-6 md:gap-8 pt-2 md:pt-4 justify-center md:justify-start">
               <div>
                 <p className="text-xl md:text-2xl font-bold text-primary">2+</p>
                 <p className="text-xs text-muted-foreground">Years Experience</p>
@@ -200,7 +200,7 @@ export default function Page() {
           whileInView="show"
           viewport={{ once: true, margin: "-100px" }}
           variants={stagger}
-          className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center max-w-6xl mx-auto w-full "
+          className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center max-w-6xl mx-auto w-full"
         >
           {/* IMAGE - left on desktop, top on mobile */}
           <motion.div variants={fadeUp} className="flex justify-center lg:justify-start">

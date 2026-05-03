@@ -15,8 +15,56 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Roshan Magar",
-  description: "Portfolio",
+  title: {
+    default: "Roshan Thapa Magar - Portfolio",
+    template: "%s | Roshan Thapa Magar",
+  },
+  description:
+    "Personal portfolio of Roshan Thapa Magar - Full Stack Developer specializing in modern web applications, scalable systems, and UI/UX design.",
+  keywords: [
+    "Roshan Thapa Magar",
+    "Portfolio",
+    "Full Stack Developer",
+    "Next.js Developer",
+    "React Developer",
+    "Web Developer Nepal",
+    "Frontend Developer",
+    "Backend Developer",
+  ],
+  authors: [{ name: "Roshan Thapa Magar" }],
+  creator: "Roshan Thapa Magar",
+
+  metadataBase: new URL("https://roshanthapamagar.vercel.app"), // change this later
+
+  openGraph: {
+    title: "Roshan Thapa Magar - Portfolio",
+    description:
+      "Full Stack Developer building modern, scalable web applications.",
+    url: "https://roshanthapamagar.vercel.app",
+    siteName: "Roshan Portfolio",
+    type: "website",
+    locale: "en_US",
+    images: [
+      {
+        url: "/roshan.jpeg", // put this in /public folder
+        width: 1200,
+        height: 630,
+        alt: "Roshan Thapa Magar Portfolio",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Roshan Thapa Magar - Portfolio",
+    description:
+      "Full Stack Developer building modern web applications.",
+    images: ["/roshan.jpeg"],
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({
@@ -37,12 +85,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {/* Sticky Header */}
+          {/* HEADER */}
           <div className="sticky top-0 z-50 bg-background border-b">
             <Header />
           </div>
 
-          {/* Scrollable Content */}
+          {/* CONTENT */}
           <main className="max-w-6xl mx-auto px-4 md:px-8 py-4 h-[calc(100vh-64px)] overflow-y-auto hide-scrollbar">
             {children}
           </main>

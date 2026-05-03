@@ -85,13 +85,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {/* HEADER (absolute, no height taken) */}
-          <div className="absolute top-0 left-0 w-full z-50 bg-background/80 backdrop-blur border-b">
+          {/* HEADER */}
+          <div className="sticky top-0 z-50 bg-background border-b">
             <Header />
           </div>
 
           {/* CONTENT */}
-          <main className="max-w-6xl mx-auto px-4 md:px-8 py-4 pt-20 h-screen overflow-y-auto hide-scrollbar">
+          <main className="max-w-6xl mx-auto px-4 md:px-8 py-4 h-[calc(100vh-64px)] overflow-y-auto hide-scrollbar">
             {children}
           </main>
         </ThemeProvider>

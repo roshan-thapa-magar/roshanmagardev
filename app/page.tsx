@@ -58,7 +58,7 @@ export default function Page() {
           variants={stagger}
           initial="hidden"
           animate="show"
-          className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 max-w-6xl mx-auto w-full px-4 md:px-6 py-12 md:py-0"
+          className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 max-w-6xl mx-auto w-full  md:py-0"
         >
           {/* LEFT */}
           <div className="space-y-6 md:space-y-8">
@@ -194,13 +194,13 @@ export default function Page() {
       </section>
 
       {/* ================= ABOUT ================= */}
-      <section className="py-16 md:py-20 lg:py-24">
+      <section>
         <motion.div
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-100px" }}
           variants={stagger}
-          className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center max-w-6xl mx-auto w-full px-4 md:px-6"
+          className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center max-w-6xl mx-auto w-full "
         >
           {/* IMAGE - left on desktop, top on mobile */}
           <motion.div variants={fadeUp} className="flex justify-center lg:justify-start">
@@ -282,7 +282,7 @@ export default function Page() {
           whileInView="show"
           viewport={{ once: true, margin: "-100px" }}
           variants={stagger}
-          className="max-w-6xl mx-auto w-full space-y-8 md:space-y-12 px-4 md:px-6"
+          className="max-w-6xl mx-auto w-full space-y-8 md:space-y-12"
         >
           <motion.div variants={fadeUp} className="text-center lg:text-left space-y-3">
             <div className="flex items-center justify-center lg:justify-start gap-3">

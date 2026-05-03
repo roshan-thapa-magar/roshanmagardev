@@ -53,7 +53,7 @@ export default function Page() {
   return (
     <main className="w-full overflow-x-hidden">
       {/* ================= HERO ================= */}
-      <section className="min-h-screen flex items-center">
+      <section className="mt-16 md:mt-0 md:min-h-screen flex items-center">
         <motion.div
           variants={stagger}
           initial="hidden"
